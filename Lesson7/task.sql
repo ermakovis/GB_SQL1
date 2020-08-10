@@ -1,6 +1,6 @@
 #Cхема базы лежит картинкой в этом коммите.
 #Задача 1.
-#Запрос без сущностей, только пользователи
+#Запрос без сущностей, только пользователи, с приложенной базой работать не будет, просто для примера.
 
 select user.id, user.name,
     (select count(*)
@@ -34,9 +34,7 @@ select user.id, user.name,
         from social_network.`like`
         join social_network.entity on `like`.destination_entity_id = entity.id
         where entity.owner_id = user.id
-            and entity.entity_type_id = (select entity_type.id
-            from social_network.entity_type
-            where entity_type.name = 'user')
+            and entity.entity_type_id = 1  #здесь должна быть функция поиска id по  названию
     ) as likes_taken,
     (select count(*)
         from social_network.`like` as l1
