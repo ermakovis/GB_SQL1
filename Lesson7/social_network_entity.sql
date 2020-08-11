@@ -1,0 +1,9 @@
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (2, 'Masha', 'Masha_url', 1, 1);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (3, 'Misha', 'Misha_url', 1, 2);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (4, 'Sasha', 'Sasha_url', 1, 3);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (5, 'Arisha', 'Arisha_url', 1, 4);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (6, 'Masha_profile_pic', 'Masha_photo_url', 2, 1);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (7, 'Misha_profile_pic', 'Misha_photo_url', 2, 2);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (8, 'Sasha_profile_pic', 'Sasha_photo_url', 2, 3);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (9, 'Arisha_profile_pic', null, 2, 4);
+INSERT INTO social_network.entity (id, title, url, entity_type_id, owner_id) VALUES (10, 'Mean_comment', 'comment_url', 3, 2);
